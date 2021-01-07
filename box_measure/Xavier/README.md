@@ -1,11 +1,18 @@
 # Box measurement app for Xavier AGX
-public documentation and releases for tof box measure project for Xavier AGX platform
 
 ## Introduction
- - describes the scope of the demo and intended setup
+This application demonstrates how ADI's ToF technology can be used for measuring the dimensions of boxes.
+
 ## Hardware setup
- - lists all the neccessary hardware elements
- - shows how to connect everything together
+Required hardware:
+ - AD-96TOF1-EBZ development kit
+ - Nvidia Xavier AGX development kit
+ - Flex cable for connection between Xavier AGX and AD-96TOF1-EBZ
+ - HDMI monitor and cable
+ - USB keyboard and mouse
+ 
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-agx-ad96tof1.jpg)
+
 ## Software setup
 The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/box_measure/Xavier/install_ubuntu_18.04.sh)
 Install the app using: (you may need to set execute permisions for the file)
