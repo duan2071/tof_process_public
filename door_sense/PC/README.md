@@ -55,6 +55,16 @@ The application will open two windows:
 ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/app_results.png)
 
  - video showing a live demo
+
+#### Create recordings for offline mode:
+```
+cd tof_process_public/recording
+source /opt/ros/noetic/setup.bash
+source /opt/robotics-ai/door-sense/setup.bash
+ROS_HOME=`pwd` roslaunch ./run-adi-record.launch capture_name:=[absolute/relative path to recording folder]
+```
+A series of recording files, having ".raw" extension, will be created into the specified recording folder. The recorded data can be later used as input for running the application in offline mode (see above section).
+
 ## Troubleshooting
  - known issues
  - solutions to common problems
