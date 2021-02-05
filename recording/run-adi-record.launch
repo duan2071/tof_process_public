@@ -1,0 +1,19 @@
+<launch>
+    <arg name="capture_name" default="./record" doc="Name of the capture to use"/>
+    <node pkg="nodelet" type="nodelet" name="standalone_nodelet"  args="manager" output="screen" />
+    <node pkg="nodelet" type="nodelet" name="tof_source" args="standalone tof_source/ToFROSCameraADISource" output="screen">
+        <param name="camera" type="int" value="0" />
+        <param name="gamma" type="double" value="0.2" />
+    </node>
+    <node pkg="nodelet" type="nodelet" name="tof_record" args="standalone tof_source/ToFROSRecord" output="screen">
+        <param name="dst_folder" type="string" value="$(arg capture_name)" />
+        <param name="max_file_size_MB" type="int" value="1024" />
+        <param name="record" type="bool" value="true" />
+    </node>
+    <node pkg="nodelet" type="nodelet" name="tof_imageview" args="standalone image_view/image" output="screen" respawn="true">
+	<remap from="image" to="/camera/image" />
+        <param name="max_image_value" type="double" value="4096" />
+        <param name="do_dynamic_scaling" type="bool" value="true" />
+    </node>
+</launch>
+
