@@ -16,7 +16,7 @@ Required hardware:
 ## Software setup
 
 ### XAVIER AGX
-The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/box_measure/Xavier/install_box-measure_bionic_arm64_agx_0.0.2.sh)
+The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier/install_box-measure_bionic_arm64_agx_0.0.2.sh)
 Install the app using: (you may need to set execute permisions for the file)
 ```
 ./install_box-measure_bionic_arm64_agx_0.0.2.sh
