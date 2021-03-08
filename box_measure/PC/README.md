@@ -7,7 +7,7 @@ public documentation and releases for tof box measure project for PC platform
  - lists all the neccessary hardware elements
  - shows how to connect everything together
 ## Software setup
-The first step is to download and install the box measurement installer. [Box measurement PC installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/box_measure/PC/install_box-measure_focal_amd64_0.0.2.sh)
+The first step is to download and install the box measurement installer. [Box measurement PC installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/PC/install_box-measure_focal_amd64_0.0.2.sh)
 Install the app using: (you may need to set execute permisions for the file)
 ```
 ./install_box-measure_focal_amd64_0.0.2.sh
