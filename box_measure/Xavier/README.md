@@ -93,8 +93,8 @@ To uninstall the box measure application open a termina window and type.
 sudo apt purge box-measure
 ```
 ## Troubleshooting
- - # known issues
+ - ### known issues
    1. Auto gain is disabled on NVidia AGX because currently there are some issues with setting the gamma parameter too often.
- - # solutions to common problems
+ - ### solutions to common problems
    1. if the image seems to dark or to saturated then the box measurement application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
    2. if the camera stops providing frames to the application the the AGX board needs to be restarted.
