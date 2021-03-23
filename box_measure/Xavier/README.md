@@ -17,7 +17,7 @@ Required hardware:
 
 ### XAVIER AGX
 The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier/install_box-measure_bionic_arm64_agx_0.0.3.sh)
-Install the app using: (you may need to set execute permisions for the file)
+Install the app using: (you may need to set execute permissions for the file)
 ```
 ./install_box-measure_bionic_arm64_agx_0.0.3.sh
 ```
@@ -31,9 +31,9 @@ For best results the camera and the box should be placed similar to the position
 
 The camera should be positioned about one meter from the ground.
 
-The box needs to be netween 1 meter and 3 meters from the camera. These limitations are due to the camera running in the medium range mode.
+The box needs to be between 1 meter and 3 meters from the camera. These limitations are due to the camera running in the medium range mode.
 
-The box shoul be centered in the field of view of the camera.
+The box should be centered in the field of view of the camera.
 
 The box dimensions should be between 20 cm and 90 cm.
 
@@ -51,20 +51,45 @@ The application will open two windows:
  - video showing a live demo
 
 ### Running the application from command line
+Open a Terminal window.
 ```
-./install_box-measure_bionic_arm64_agx_0.0.3.sh
+/opt/robotics-ai/box-measure/run.sh
 ```
+The image may be too dark or too saturated. Since auto gain unfortunately does not work on Nvidia AGX, the brightness of the image can be adjusted by passing a parameter in the command line. The parameter that controls the image saturation is called "gamma" and is in the range 0.1 to 5.0. 0.1 is the most saturated while 5.0 is the darkest.
+To set the gamma correction parameter to 0.5 you should use the command line:
+```
+/opt/robotics-ai/box-measure/run.sh gamma:=0.5
+```
+You can test diffrent values for the gamma parameter to see which generates the best results.
+
 ### Running the application using a capture file
+Open a Terminal window.
 ```
-./install_box-measure_bionic_arm64_agx_0.0.3.sh
-```
-### Recording captures
-```
-./install_box-measure_bionic_arm64_agx_0.0.3.sh
+/opt/robotics-ai/box-measure/run_capture.sh capture_name:=[full path for the capture file]
 ```
 
+### Recording captures
+Open a Terminal window.
+To start the record application type:
+```
+/opt/robotics-ai/box-measure/run_record.sh
+```
+This will start the application and show two windows with the IR image and the depth image. 
+The application will not start recording until it receives a "start record command".
+
+To start recording open a new Terminal window and type:
+```
+/opt/robotics-ai/box-measure/run_conf.sh
+```
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/record.png)
+In the rqt_reconfigure_rai window select tof_record.
+Enter a destination folder where the application will write the capture file. Make sure you have write access in that folder. Your best bet is somewhere in the home folder for the analog user.
+
+To start recording click on the unchecked box next to the record label. To stop recording click the box again.
+
 ## Troubleshooting
- - known issues
- -     auto gain is disabled due to driver issues
- - solutions to common problems
- -    SET GAMMA MANUALLY
+ - # known issues
+   1. Auto gain is disabled on NVidia AGX because currently there are some issues with setting the gamma parameter too often.
+ - # solutions to common problems
+   1. if the image seems to dark or to saturated then the box measurement application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
+   2. if the camera stops providing frames to the application the the AGX board needs to be restarted.
