@@ -16,10 +16,10 @@ Required hardware:
 ## Software setup
 
 ### XAVIER AGX
-The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier/install_box-measure_bionic_arm64_agx_0.0.2.sh)
+The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier/install_box-measure_bionic_arm64_agx_0.0.3.sh)
 Install the app using: (you may need to set execute permisions for the file)
 ```
-./install_box-measure_bionic_arm64_agx_0.0.2.sh
+./install_box-measure_bionic_arm64_agx_0.0.3.sh
 ```
 This will install a linux app called Box Measure
  
@@ -49,6 +49,22 @@ The application will open two windows:
 ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/app_results_xavier.png)
 
  - video showing a live demo
+
+### Running the application from command line
+```
+./install_box-measure_bionic_arm64_agx_0.0.3.sh
+```
+### Running the application using a capture file
+```
+./install_box-measure_bionic_arm64_agx_0.0.3.sh
+```
+### Recording captures
+```
+./install_box-measure_bionic_arm64_agx_0.0.3.sh
+```
+
 ## Troubleshooting
  - known issues
+ -     auto gain is disabled due to driver issues
  - solutions to common problems
+ -    SET GAMMA MANUALLY
