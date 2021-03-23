@@ -87,6 +87,11 @@ Enter a destination folder where the application will write the capture file. Ma
 
 To start recording click on the unchecked box next to the record label. To stop recording click the box again.
 
+## Uninstalling the app
+To uninstall the box measure application open a termina window and type.
+```
+sudo apt purge box-measure
+```
 ## Troubleshooting
  - # known issues
    1. Auto gain is disabled on NVidia AGX because currently there are some issues with setting the gamma parameter too often.
