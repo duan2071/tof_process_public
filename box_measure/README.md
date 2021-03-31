@@ -47,13 +47,13 @@ Open a Terminal window.
 ```
 /opt/robotics-ai/box-measure/run.sh
 ```
-The image may be too dark or too saturated. An aguto gain feature has been implemented.
+The image may be too dark or too saturated. To mitigate this issue an auto gain feature has been implemented.
 Unfortunately auto gain does not work on Xavier AGX and Xavier NX. The brightness of the image can be adjusted by passing a parameter in the command line. The parameter that controls the image saturation is called "gamma" and is in the range 0.1 to 5.0. 0.1 is the most saturated while 5.0 is the darkest.
 To set the gamma correction parameter to 0.5 you should use the command line:
 ```
 /opt/robotics-ai/box-measure/run.sh gamma:=0.5
 ```
-You can test diffrent values for the gamma parameter to see which generates the best results.
+Different values for the gamma parameter can be tested to see which generates the best results.
 
 ### Running the application using a capture file
 Open a Terminal window.
@@ -67,7 +67,7 @@ Open a Terminal window.
 
 
 ## Uninstalling the app
-To uninstall the box measure application open a termina window and type.
+To uninstall the box measure application open a terminal window and type.
 ```
 sudo apt purge box-measure
 ```
