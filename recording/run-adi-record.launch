@@ -1,19 +1,32 @@
 <launch>
-    <arg name="capture_name" default="./record" doc="Name of the capture to use"/>
     <node pkg="nodelet" type="nodelet" name="standalone_nodelet"  args="manager" output="screen" />
+
+    <arg name="gamma" default="1.0" doc="Gamma correction value (between 0.1 and 5)"/>
+    <arg name="auto_gain" default="False" doc="Enable auto gain"/>
+    <arg name="mode" default="2" doc="Tof operation mode (near, med, far)"/>
+    <arg name="record" default="False" doc="Start record when application starts"/>
+    <arg name="dst_folder" default="./record" doc="Record destination folder"/>
+
     <node pkg="nodelet" type="nodelet" name="tof_source" args="standalone tof_source/ToFROSCameraADISource" output="screen">
         <param name="camera" type="int" value="0" />
-        <param name="gamma" type="double" value="0.2" />
+        <param name="mode" type="int" value="$(arg mode)" />
+        <param name="gamma" type="double" value="$(arg gamma)" />
+        <param name="auto_gain" type="bool" value="$(arg auto_gain)" />
     </node>
     <node pkg="nodelet" type="nodelet" name="tof_record" args="standalone tof_source/ToFROSRecord" output="screen">
-        <param name="dst_folder" type="string" value="$(arg capture_name)" />
+        <param name="dst_folder" type="string" value="$(arg dst_folder)" />
         <param name="max_file_size_MB" type="int" value="1024" />
-        <param name="record" type="bool" value="true" />
+        <param name="record" type="bool" value="$(arg record)" />
     </node>
     <node pkg="nodelet" type="nodelet" name="tof_imageview" args="standalone image_view/image" output="screen" respawn="true">
-	<remap from="image" to="/camera/image" />
+        <remap from="image" to="/camera/image" />
         <param name="max_image_value" type="double" value="4096" />
         <param name="do_dynamic_scaling" type="bool" value="true" />
     </node>
+    <node pkg="nodelet" type="nodelet" name="tof_depthview" args="standalone image_view/image" output="screen" respawn="true">
+        <remap from="image" to="/camera/depth/image" />
+        <param name="max_image_value" type="double" value="4096" />
+        <param name="do_dynamic_scaling" type="bool" value="true" />
+        <param name="colormap" type="int" value="9" />
+    </node>
 </launch>
-
