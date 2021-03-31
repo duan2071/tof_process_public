@@ -24,9 +24,16 @@ For best results the camera should be placed similar to the positions represente
 
 The camera should be positioned about two meter from the ground.
 
-The camera is set by default in "medium" mode which means that the range of the detection is limited to 6m. This may impact the way the ground and walls are detected.
+The detection range is determined by the "mode" the ToF camera is set to. This will impact the way persons, the ground and walls are detected.
+
+For the "far" mode the detection range is between 3m and 6m.
+
+For the "medium" mode the detection range is between 1m and 4.5m;
+
+The camera is set by default in "far" mode.
 
 Please watch the live demo video to see an example of how the camera should be placed.
+[Demo video](https://www.youtube.com/watch?v=-CErH6ROli8&ab_channel=RoboticsAI)
 
 ### Run the door sense app.
 
@@ -57,7 +64,7 @@ To set the gamma correction parameter to 0.5 you should use the command line:
 Different values for the gamma parameter can be tested to see which generates the best results.
 
 For the door sense application you can also change the mode the ToF camera is operating in.
-The parameter "mode" can be used to change the Tof operation mode. Possible values are: 0 for near, 1 for med and 2 for far.
+The parameter "mode" can be used to change the Tof camera operation mode. Possible values are: 0 for near, 1 for med and 2 for far.
 By default the mode parameter is set to 2(far).
 ```
 /opt/robotics-ai/door-sense/run.sh mode:=1
