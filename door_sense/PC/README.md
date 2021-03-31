@@ -1,70 +1,29 @@
-# Door sense app for PC
-public documentation and releases for tof door sense project for PC platform
-
-## Introduction
-This application demonstrates how ADI's ToF technology can be used for people detection.
-
+# Door sense app for Linux PC
 ## Hardware setup
-Required hardware:
- - AD-96TOF1-EBZ development kit
- - PC running Ubuntu linux 20.04
- 
+Please follow these instructions.
+
+[PC hardware setup]https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_linux
+
 ## Software setup
-The first step is to download and install the door sense installer. [Door sense PC installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/box_measure/PC/install_door-sense_ubuntu_20.04_amd64_0.0.1.sh)
-Install the app using: (you may need to set execute permisions for the file)
+The first step is to download and install the door sense installer.
+
+Two installers are provided for Linux PC. One using Cuda acceleration and one using only CPU processing.
+
+[Door sense PC installer Ubuntu 20.04](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/install_door-sense_focal_amd64_0.0.2.sh)
+
+[Door sense PC installer Ubuntu 20.04 with cuda](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/install_door-sense_focal_amd64_cuda_0.0.2.sh)
+
+Install the app using: (you may need to set execute permissions for the file)
 ```
-./install_door-sense_ubuntu_20.04_amd64_0.0.1.sh
+./install_door-sense_focal_amd64_0.0.2.sh
 ```
-This will install a linux app called Door Sense
- 
-## Running the demo
-### Position the camera.
-For best results the camera should be placed similar to the positions represented in the image below.
-
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/fig1.png)
-
-The camera should be positioned about two meter from the ground.
-
-The camera is set by default in "medium" mode which means that the range of the detection is limited to 6m. This may impact the way the ground and walls are detected.
-
-Please watch the live demo video to see an example of how the camera should be placed.
-
-### Run the door sense app.
-
-#### Running the aplication in live mode
-
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/run_app.png)
-
-Alternetly the application can be started in live mode by using the command line:
+or
 ```
-/opt/robotics-ai/door-sense/run.sh
+./install_door-sense_focal_amd64_cuda_0.0.2.sh
 ```
-
-#### Running the aplication in offline mode:
-
-The application can be started in offline mode by using the command line:
-```
-/opt/robotics-ai/door-sense/run.sh [full path to the capture file]
-```
-
-
-The application will open two windows:
-- an image window showing the input from the camera and the detected elements (persons in the detection area and any ground and walls inside the detection area).
-- a console window
-
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/app_results.png)
-
- - video showing a live demo
-
-#### Create recordings for offline mode:
-```
-cd tof_process_public/recording
-source /opt/ros/noetic/setup.bash
-source /opt/robotics-ai/door-sense/setup.bash
-ROS_HOME=`pwd` roslaunch ./run-adi-record.launch capture_name:=[absolute/relative path to recording folder]
-```
-A series of recording files, having ".raw" extension, will be created into the specified recording folder. The recorded data can be later used as input for running the application in offline mode (see above section).
 
 ## Troubleshooting
- - known issues
- - solutions to common problems
+### known issues
+-
+### solutions to common problems
+- if the camera stops providing frames to the application then you should unplug the power from the dragon board and restart the camera system.
