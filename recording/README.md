@@ -5,6 +5,7 @@ To start the record application type:
 /opt/robotics-ai/[Installed product]/run_record.sh
 ```
 Installed product can be box-measure or door-sense.
+
 This will start the application and show two windows with the IR image and the depth image. 
 The application will not start recording until it receives a "start record command".
 
