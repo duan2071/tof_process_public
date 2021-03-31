@@ -7,13 +7,13 @@ This application demonstrates how ADI's ToF technology can be used for people de
 ## Hardware and software setup
 
 PC
-[Linux PC specific info](https://github.com/robotics-ai/tof_process_public/blob/main/door-sense/PC/README.md)
+[Linux PC specific info](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/README.md)
 
 Xavier AGX
-[Linux Xavier AGX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/door-sense/Xavier-AGX/README.md)
+[Linux Xavier AGX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/README.md)
 
 Xavier NX
-[Linux Xavier NX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/door-sense/Xavier-NX/README.md)
+[Linux Xavier NX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/README.md)
 
  
 ## Running the demo
