@@ -40,13 +40,15 @@ The application will open two windows:
 ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/app_results_xavier.png)
 
  - video showing a live demo
+ [Demo video](https://www.youtube.com/watch?v=G-9UfaZXUCk)
 
 ### Running the application from command line
 Open a Terminal window.
 ```
 /opt/robotics-ai/box-measure/run.sh
 ```
-The image may be too dark or too saturated. Since auto gain unfortunately does not work on Nvidia AGX, the brightness of the image can be adjusted by passing a parameter in the command line. The parameter that controls the image saturation is called "gamma" and is in the range 0.1 to 5.0. 0.1 is the most saturated while 5.0 is the darkest.
+The image may be too dark or too saturated. An aguto gain feature has been implemented.
+Unfortunately auto gain does not work on Xavier AGX and Xavier NX. The brightness of the image can be adjusted by passing a parameter in the command line. The parameter that controls the image saturation is called "gamma" and is in the range 0.1 to 5.0. 0.1 is the most saturated while 5.0 is the darkest.
 To set the gamma correction parameter to 0.5 you should use the command line:
 ```
 /opt/robotics-ai/box-measure/run.sh gamma:=0.5
