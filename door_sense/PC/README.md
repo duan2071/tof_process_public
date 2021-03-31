@@ -13,7 +13,7 @@ Two installers are provided for Linux PC. One using Cuda acceleration and one us
 
 [Door sense PC installer Ubuntu 20.04 with cuda](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/install_door-sense_focal_amd64_cuda_0.0.2.sh)
 
-Install the app using: (you may need to set execute permisions for the file)
+Install the app using: (you may need to set execute permissions for the file)
 ```
 ./install_door-sense_focal_amd64_0.0.2.sh
 ```
