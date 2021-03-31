@@ -12,7 +12,7 @@ Xavier AGX
 [Linux Xavier AGX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-AGX/README.md)
 
 Xavier NX
-[Linux Xavier AGX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-AGX/README.md)
+[Linux Xavier NX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/README.md)
 
 ## Running the demo
 ### Position the camera and the box.
@@ -79,4 +79,4 @@ Xavier AGX
 [Linux Xavier AGX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-AGX/README.md)
 
 Xavier NX
-[Linux Xavier AGX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-AGX/README.md)
+[Linux Xavier NX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/README.md)
