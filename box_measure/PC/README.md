@@ -12,6 +12,7 @@ Install the app using: (you may need to set execute permisions for the file)
 ```
 
 ## Troubleshooting
- - known issues
- - solutions to common problems
- 1. if the camera stops providing frames to the application then you should unplug the power from the dragon board and restart the camera system.
+### known issues
+-
+### solutions to common problems
+- if the camera stops providing frames to the application then you should unplug the power from the dragon board and restart the camera system.
