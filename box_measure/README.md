@@ -28,7 +28,7 @@ The box should be centered in the field of view of the camera.
 
 The box dimensions should be between 20 cm and 90 cm.
 
-Please watch the live demo video to see an example of how the camera and the box should be placed.
+Please watch the live demo video to see an example of how the camera and the box should be placed. [Demo video](https://www.youtube.com/watch?v=G-9UfaZXUCk)
 
 ### Run the box measure app.
 ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/run_app_xavier.png)
