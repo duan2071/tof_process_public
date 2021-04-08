@@ -23,6 +23,10 @@ Install the app using: (Note: you may need to set execute permissions for the fi
 This will install a linux app called Box Measure
 
 **The board needs to be restarted before the application can be used.**
+
+**Also make sure the AGX board is set to run in mode 0 (MAXN).**
+
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/set_mode.png)
  
 ## Troubleshooting
 ### known issues
