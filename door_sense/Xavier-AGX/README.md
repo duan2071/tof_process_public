@@ -22,6 +22,12 @@ Install the app using: (Note: you may need to set execute permissions for the fi
 ```
 This will install a linux app called Door Sense
 
+**The board needs to be restarted before the application can be used.**
+
+**Also make sure the AGX board is set to run in mode 0 (MAXN).**
+
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/set_mode.png)
+
 This application uses NVidia Cuda to run. Make sure Cuda is instaled on the Xavier AGX board. If it is not already installed. please install NVidia Cuda on the Xavier AGX board using the NVidia SDK Manager.
  
 ## Troubleshooting
