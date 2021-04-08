@@ -20,7 +20,11 @@ Install the app using: (Note: you may need to set execute permissions for the fi
 ```
 ./install_door-sense_bionic_arm64_nx_cuda_0.0.2.sh
 ```
-This will install a linux app called Door Sense
+This will install a linux app called Door Sense.
+
+**The board needs to be restarted before the application can be used.**
+
+**Also make sure the AGX board is set to run in mode 2.**
 
 This application uses NVidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed. please install NVidia Cuda on the Xavier NX board using the NVidia SDK Manager.
  
