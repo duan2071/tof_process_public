@@ -20,7 +20,11 @@ Install the app using: (Note: you may need to set execute permissions for the fi
 ```
 ./install_box-measure_bionic_arm64_nx_0.0.3.sh
 ```
-This will install a linux app called Box Measure
+This will install a linux app called Box Measure.
+
+**The board needs to be restarted before the application can be used.**
+
+**Also make sure the NX board is set to run in mode 2.**
  
 ## Troubleshooting
 ### known issues
