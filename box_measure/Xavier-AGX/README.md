@@ -21,6 +21,8 @@ Install the app using: (Note: you may need to set execute permissions for the fi
 ./install_box-measure_bionic_arm64_agx_0.0.3.sh
 ```
 This will install a linux app called Box Measure
+
+**The board needs to be restarted before the application can be used.**
  
 ## Troubleshooting
 ### known issues
