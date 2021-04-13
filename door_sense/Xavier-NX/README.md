@@ -10,6 +10,8 @@ Required hardware:
  
  ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-nx-ad96tof1.jpg)
 
+**Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the NX board.**
+
 For additions info plese see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
 
