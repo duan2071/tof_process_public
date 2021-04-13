@@ -12,6 +12,12 @@ Required hardware:
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the AGX board.**
 
+**Make sure the DIP switches on the mezzanine board are in the correct position**
+
+**Orientation of the ribbon cable (conductors pointing down towards the lens on the mezzanine card and conductors pointing down towards the PCB surface on the interposer)**
+
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
+
 For additions info plese see: 
 [Xavier AGX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_agx)
 
