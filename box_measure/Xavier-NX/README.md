@@ -18,7 +18,7 @@ Required hardware:
 
  ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
-For additions info plese see: 
+For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
 
 ## Software setup
@@ -37,7 +37,7 @@ Install deb packages:
 ```
 sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
 ```
-This step is required only if not done before or for a different application and will install required modules to run the camera.
+This step installs the modules required to run the camera and needs to be done only once per system.
 
 ```
 sudo apt install ./box-measure_0.0.4_arm64_nx.deb
