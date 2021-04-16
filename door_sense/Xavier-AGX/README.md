@@ -18,7 +18,7 @@ Required hardware:
 
  ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
-For additions info plese see: 
+For additions info please see: 
 [Xavier AGX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_agx)
 
 ## Software setup
