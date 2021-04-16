@@ -63,6 +63,14 @@ To set the gamma correction parameter to 0.5 you should use the command line:
 ```
 Different values for the gamma parameter can be tested to see which generates the best results.
 
+The gamma parameter can also be set by using the configuration tool.
+To start the configuration tool open a new Terminal window and type:
+```
+/opt/robotics-ai/[Installed product]/run_conf.sh
+```
+The gamma parameter can be found in the tof_source panel. (Setting the gamma parameter too often on AGX/NX boards may lead to a freeze in the camera driver).
+
+
 For the door sense application you can also change the mode the ToF camera is operating in.
 The parameter "mode" can be used to change the Tof camera operation mode. Possible values are: 0 for near, 1 for med and 2 for far.
 By default the mode parameter is set to 2(far).
