@@ -58,7 +58,7 @@ To start the application in "far" mode open a Terminal window and type in the co
 ```
 To start the application from the command line in "med" mode you can use the command line below.
 ```
-/opt/robotics-ai/door-sense/run.sh
+/opt/robotics-ai/door-sense/run_med.sh
 ```
 
 The image may be too dark or too saturated. To mitigate this issue an auto gain feature has been implemented.
