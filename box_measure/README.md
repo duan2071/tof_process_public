@@ -53,7 +53,15 @@ To set the gamma correction parameter to 0.5 you should use the command line:
 ```
 /opt/robotics-ai/box-measure/run.sh gamma:=0.5
 ```
+
 Different values for the gamma parameter can be tested to see which generates the best results.
+
+The gamma parameter can also be set by using the configuration tool.
+To start the configuration tool open a new Terminal window and type:
+```
+/opt/robotics-ai/[Installed product]/run_conf.sh
+```
+The gamma parameter can be found in the tof_source panel. (Setting the gamma parameter too often on AGX/NX boards may lead to a freeze in the camera driver).
 
 ### Running the application using a capture file
 Open a Terminal window.
