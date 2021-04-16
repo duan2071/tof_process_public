@@ -1,5 +1,5 @@
 # Door sense app
-public documentation and releases for tof door sense project
+Public documentation and releases for tof door sense project.
 
 ## Introduction
 This application demonstrates how ADI's ToF technology can be used for people detection.
