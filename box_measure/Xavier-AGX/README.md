@@ -23,10 +23,25 @@ For additions info plese see:
 
 ## Software setup
 
-The first step is to download and install the box measurement installer. [Box measurement Xavier AGX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-AGX/install_box-measure_bionic_arm64_agx_0.0.3.sh)
-Install the app using: (Note: you may need to set execute permissions for the file)
+The first step is to download scripts and deb packages:
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-AGX/install_box-measure_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-AGX/aditof-camera_0.0.1_arm64_agx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-AGX/box-measure_0.0.4_arm64_agx.deb)
+
+Install the app external dependencies using: (you may need to set execute permissions for the file)
+
 ```
-./install_box-measure_bionic_arm64_agx_0.0.3.sh
+./install_box-measure_dependencies_bionic.sh
+```
+
+Install deb packages:
+
+```
+sudo apt install ./aditof-camera_0.0.1_arm64_agx.deb
+```
+This step is required only if not done before or for a different application and will install required modules to run the camera.
+```
+sudo apt install ./box-measure_0.0.4_arm64_agx.deb
 ```
 This will install a linux app called Box Measure
 
