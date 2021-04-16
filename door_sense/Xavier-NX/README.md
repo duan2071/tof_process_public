@@ -36,7 +36,7 @@ Install deb packages:
 ```
 sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
 ```
-This step is required only if not done before or for a different application and will install required modules to run the camera.
+This step installs the modules required to run the camera and needs to be done only once.
 
 ```
 sudo apt install ./door-sense_0.0.3_arm64_nx_cuda.deb
@@ -47,11 +47,11 @@ This will install a linux app called Door Sense.
 
 **Also make sure the NX board is set to run in mode 2.**
 
-This application uses NVidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed. please install NVidia Cuda on the Xavier NX board using the NVidia SDK Manager.
+This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed. please install Nvidia Cuda on the Xavier NX board using the Nvidia SDK Manager.
  
 ## Troubleshooting
 ### known issues
-   - Auto gain is disabled on NVidia NX because currently there are some issues with setting the gamma parameter too often.
+   - Auto gain is disabled on Nvidia NX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
    - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
    - if the camera stops providing frames to the application the the NX board needs to be restarted.
