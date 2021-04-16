@@ -37,7 +37,7 @@ Install deb packages:
 ```
 sudo apt install ./aditof-camera_0.0.1_arm64_agx.deb
 ```
-This step installs the modules required to run the camera and needs to be done only once.
+This step installs the modules required to run the camera and needs to be done only once per system.
 
 ```
 sudo apt install ./door-sense_0.0.3_arm64_agx_cuda.deb
