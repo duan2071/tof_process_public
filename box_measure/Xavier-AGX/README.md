@@ -29,21 +29,20 @@ The first step is to download scripts and deb packages:
 - [deb package](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-AGX/box-measure_0.0.4_arm64_agx.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
-
 ```
 ./install_box-measure_dependencies_bionic.sh
 ```
 
 Install deb packages:
-
 ```
 sudo apt install ./aditof-camera_0.0.1_arm64_agx.deb
 ```
 This step is required only if not done before or for a different application and will install required modules to run the camera.
+
 ```
 sudo apt install ./box-measure_0.0.4_arm64_agx.deb
 ```
-This will install a linux app called Box Measure
+This will install a linux app called Box Measure.
 
 **The board needs to be restarted before the application can be used.**
 
