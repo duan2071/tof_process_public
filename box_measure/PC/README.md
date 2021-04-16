@@ -2,7 +2,7 @@
 ## Hardware setup
 Please follow these instructions.
 
-[PC hardware setup]https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_linux
+[PC hardware setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_linux)
 
 ## Software setup
 The first step is to download scripts and deb packages:
