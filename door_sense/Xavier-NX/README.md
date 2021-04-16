@@ -18,15 +18,28 @@ Required hardware:
 
  ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
-For additions info plese see: 
+For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
 
 ## Software setup
 
-The first step is to download and install the door sense installer. [Door sense Xavier NX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/install_door-sense_bionic_arm64_nx_cuda_0.0.2.sh)
-Install the app using: (Note: you may need to set execute permissions for the file)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/install_door-sense_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/door-sense_0.0.3_arm64_nx_cuda.deb)
+
+Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_door-sense_bionic_arm64_nx_cuda_0.0.2.sh
+./install_box-measure_dependencies_bionic.sh
+```
+
+Install deb packages:
+```
+sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
+```
+This step installs the modules required to run the camera and needs to be done only once per system.
+
+```
+sudo apt install ./door-sense_0.0.3_arm64_nx_cuda.deb
 ```
 This will install a linux app called Door Sense.
 
@@ -34,11 +47,11 @@ This will install a linux app called Door Sense.
 
 **Also make sure the NX board is set to run in mode 2.**
 
-This application uses NVidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed. please install NVidia Cuda on the Xavier NX board using the NVidia SDK Manager.
+This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed. please install Nvidia Cuda on the Xavier NX board using the Nvidia SDK Manager.
  
 ## Troubleshooting
 ### known issues
-   - Auto gain is disabled on NVidia NX because currently there are some issues with setting the gamma parameter too often.
+   - Auto gain is disabled on Nvidia NX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
    - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
    - if the camera stops providing frames to the application the the NX board needs to be restarted.
