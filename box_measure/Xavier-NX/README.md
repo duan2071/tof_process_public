@@ -24,9 +24,9 @@ For additions info please see:
 ## Software setup
 
 The first step is to download scripts and deb packages:
-- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-NX/install_box-measure_dependencies_bionic.sh)
-- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/release/box_measure/Xavier-NX/box-measure_0.0.4_arm64_nx.deb)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/install_box-measure_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/box-measure_0.0.4_arm64_nx.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```

@@ -24,9 +24,9 @@ For additions info please see:
 ## Software setup
 
 The first step is to download scripts and deb packages:
-- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-AGX/install_door-sense_dependencies_bionic.sh)
-- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-AGX/aditof-camera_0.0.1_arm64_agx.deb)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-AGX/door-sense_0.0.3_arm64_agx_cuda.deb)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/install_door-sense_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/aditof-camera_0.0.1_arm64_agx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/door-sense_0.0.3_arm64_agx_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
