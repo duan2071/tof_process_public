@@ -23,12 +23,26 @@ For additions info plese see:
 
 ## Software setup
 
-The first step is to download and install the door sense installer. [Door sense Xavier AGX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/install_door-sense_bionic_arm64_agx_cuda_0.0.2.sh)
-Install the app using: (Note: you may need to set execute permissions for the file)
+The first step is to download scripts and deb packages:
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-AGX/install_door-sense_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-AGX/aditof-camera_0.0.1_arm64_agx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-AGX/door-sense_0.0.3_arm64_agx_cuda.deb)
+
+Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_door-sense_bionic_arm64_agx_cuda_0.0.2.sh
+./install_box-measure_dependencies_bionic.sh
 ```
-This will install a linux app called Door Sense
+
+Install deb packages:
+```
+sudo apt install ./aditof-camera_0.0.1_arm64_agx.deb
+```
+This step is required only if not done before or for a different application and will install required modules to run the camera.
+
+```
+sudo apt install ./door-sense_0.0.3_arm64_agx_cuda.deb
+```
+This will install a linux app called Door Sense.
 
 **The board needs to be restarted before the application can be used.**
 
