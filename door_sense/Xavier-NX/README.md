@@ -23,10 +23,23 @@ For additions info plese see:
 
 ## Software setup
 
-The first step is to download and install the door sense installer. [Door sense Xavier NX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/install_door-sense_bionic_arm64_nx_cuda_0.0.2.sh)
-Install the app using: (Note: you may need to set execute permissions for the file)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-NX/install_door-sense_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/release/door_sense/Xavier-NX/door-sense_0.0.3_arm64_nx_cuda.deb)
+
+Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_door-sense_bionic_arm64_nx_cuda_0.0.2.sh
+./install_box-measure_dependencies_bionic.sh
+```
+
+Install deb packages:
+```
+sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
+```
+This step is required only if not done before or for a different application and will install required modules to run the camera.
+
+```
+sudo apt install ./door-sense_0.0.3_arm64_nx_cuda.deb
 ```
 This will install a linux app called Door Sense.
 
