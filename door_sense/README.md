@@ -37,7 +37,7 @@ Please watch the live demo video to see an example of how the camera should be p
 
 #### Running the application in live mode
 
-There are three applications available.
+There are three applications available ("Door Sense Fx" in not availible on PC).
 
 - "Door Sense" is intended to be used with the AD-96TOF1-EBZ camera module in "far" mode
 - "Door Sense Med" is intended to be used with the AD-96TOF1-EBZ camera module in "med" mode
