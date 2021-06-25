@@ -18,17 +18,31 @@ Required hardware:
 
  ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
-For additions info plese see: 
+For additions info please see: 
 [Xavier AGX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_agx)
 
 ## Software setup
 
-The first step is to download and install the door sense installer. [Door sense Xavier AGX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/install_door-sense_bionic_arm64_agx_cuda_0.0.2.sh)
-Install the app using: (Note: you may need to set execute permissions for the file)
+The first step is to download scripts and deb packages:
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/install_door-sense_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/aditof-camera_0.0.1_arm64_agx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/door-sense_0.0.3_arm64_agx_cuda.deb)
+
+Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_door-sense_bionic_arm64_agx_cuda_0.0.2.sh
+./install_box-measure_dependencies_bionic.sh
 ```
-This will install a linux app called Door Sense
+
+Install deb packages:
+```
+sudo apt install ./aditof-camera_0.0.1_arm64_agx.deb
+```
+This step installs the modules required to run the camera and needs to be done only once per system.
+
+```
+sudo apt install ./door-sense_0.0.3_arm64_agx_cuda.deb
+```
+This will install a linux app called Door Sense.
 
 **The board needs to be restarted before the application can be used.**
 
@@ -36,11 +50,11 @@ This will install a linux app called Door Sense
 
 ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/set_mode.png)
 
-This application uses NVidia Cuda to run. Make sure Cuda is instaled on the Xavier AGX board. If it is not already installed. please install NVidia Cuda on the Xavier AGX board using the NVidia SDK Manager.
+This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavier AGX board. If it is not already installed. please install Nvidia Cuda on the Xavier AGX board using the Nvidia SDK Manager.
  
 ## Troubleshooting
 ### known issues
-   - Auto gain is disabled on NVidia AGX because currently there are some issues with setting the gamma parameter too often.
+   - Auto gain is disabled on Nvidia AGX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
    - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
    - if the camera stops providing frames to the application the the AGX board needs to be restarted.

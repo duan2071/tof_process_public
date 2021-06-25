@@ -18,15 +18,29 @@ Required hardware:
 
  ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
-For additions info plese see: 
+For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
 
 ## Software setup
 
-The first step is to download and install the box measurement installer. [Box measurement Xavier NX installer Ubuntu 18.04](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/install_box-measure_bionic_arm64_nx_0.0.3.sh)
-Install the app using: (Note: you may need to set execute permissions for the file)
+The first step is to download scripts and deb packages:
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/install_box-measure_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/box-measure_0.0.4_arm64_nx.deb)
+
+Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_box-measure_bionic_arm64_nx_0.0.3.sh
+./install_box-measure_dependencies_bionic.sh
+```
+
+Install deb packages:
+```
+sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
+```
+This step installs the modules required to run the camera and needs to be done only once per system.
+
+```
+sudo apt install ./box-measure_0.0.4_arm64_nx.deb
 ```
 This will install a linux app called Box Measure.
 
