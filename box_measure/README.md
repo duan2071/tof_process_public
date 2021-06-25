@@ -31,7 +31,7 @@ The box dimensions should be between 20 cm and 90 cm.
 Please watch the live demo video to see an example of how the camera and the box should be placed. [Demo video](https://www.youtube.com/watch?v=G-9UfaZXUCk)
 
 ### Run the box measure app.
-There are two applications available. 
+There are two applications available (Box Measure FX is not availible on PC). 
 - Box Measure v0.5 is intended to be used with the AD-96TOF1-EBZ camera module
 - Box Measure FX v0.5 is intended to be used with the AD-FXTOF1-EBZ camera module
 
