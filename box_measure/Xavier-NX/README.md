@@ -1,7 +1,7 @@
 # Box measurement app for Xavier NX
 
-## Hardware setup
-Required hardware:
+## Hardware setup AD-96TOF1-EBZ
+Required hardware AD-96TOF1-EBZ:
  - AD-96TOF1-EBZ development kit
  - Nvidia Xavier NX development kit
  - Flex cable for connection between Xavier NX and AD-96TOF1-EBZ
@@ -20,6 +20,23 @@ Required hardware:
 
 For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
+
+## Hardware setup AD-FXTOF1-EBZ
+Required hardware AD-FXTOF1-EBZ:
+ - AD-FXTOF1-EBZ development kit
+ - Nvidia Xavier NX development kit
+ - Flex cable for connection between Xavier NX and AD-FXTOF1-EBZ
+ - HDMI monitor and cable
+ - USB keyboard and mouse
+ 
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-adfxtof1.jpg)
+
+**Please make sure that the power source is plugged into the camera module before powering up the NX board.**
+
+**Orientation of the ribbon cable (conductors pointing away from the hearest esdge on the camera module and conductors pointing towards the heat sink on the NX board)**
+
+For additions info please see: 
+[Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-fxtof1-ebz/ug_jetson)
 
 ## Software setup
 
