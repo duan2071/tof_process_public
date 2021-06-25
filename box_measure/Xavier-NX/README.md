@@ -33,7 +33,7 @@ Required hardware AD-FXTOF1-EBZ:
 
 **Please make sure that the power source is plugged into the camera module before powering up the NX board.**
 
-**Orientation of the ribbon cable (conductors pointing away from the hearest esdge on the camera module and conductors pointing towards the heat sink on the NX board)**
+**Orientation of the ribbon cable (conductors pointing away from the nearest edge on the camera module and conductors pointing towards the heat sink on the NX board)**
 
 For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-fxtof1-ebz/ug_jetson)
