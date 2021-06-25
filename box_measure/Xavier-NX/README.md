@@ -46,7 +46,7 @@ The first step is to download scripts and deb packages:
 - [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
 or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
 
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/box-measure_0.0.5_arm64_nx.deb)
+- [Box measure deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/box-measure_0.0.5_arm64_nx.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
