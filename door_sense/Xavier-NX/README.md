@@ -1,14 +1,14 @@
 # Door sense app for Xavier NX
 
-## Hardware setup
-Required hardware:
+## Hardware setup AD-96TOF1-EBZ
+Required hardware AD-96TOF1-EBZ:
  - AD-96TOF1-EBZ development kit
  - Nvidia Xavier NX development kit
  - Flex cable for connection between Xavier NX and AD-96TOF1-EBZ
  - HDMI monitor and cable
  - USB keyboard and mouse
  
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-nx-ad96tof1.jpg)
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-ad96tof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the NX board.**
 
@@ -21,33 +21,60 @@ Required hardware:
 For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
 
+## Hardware setup AD-FXTOF1-EBZ
+Required hardware AD-FXTOF1-EBZ:
+ - AD-FXTOF1-EBZ development kit
+ - Nvidia Xavier NX development kit
+ - Flex cable for connection between Xavier NX and AD-FXTOF1-EBZ
+ - HDMI monitor and cable
+ - USB keyboard and mouse
+ 
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-adfxtof1.jpg)
+
+**Please make sure that the power source is plugged into the camera module before powering up the NX board.**
+
+**Orientation of the ribbon cable (conductors pointing away from the nearest edge on the camera module and conductors pointing towards the heat sink on the NX board)**
+
+For additions info please see: 
+[Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-fxtof1-ebz/ug_jetson)
+
+
 ## Software setup
 
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/install_door-sense_dependencies_bionic.sh)
-- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/door-sense_0.0.3_arm64_nx_cuda.deb)
+
+- [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
+or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
+
+- [Door Sense deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/door-sense_0.0.4_arm64_nx_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_box-measure_dependencies_bionic.sh
+./install_door-sense_dependencies_bionic.sh
 ```
 
-Install deb packages:
+Install camera deb package (depending on the version of camera module you are using):
 ```
-sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
+sudo apt install ./aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb
 ```
+or
+```
+sudo apt install ./aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb
+```
+
 This step installs the modules required to run the camera and needs to be done only once per system.
 
+Install Door Sense deb package:
 ```
-sudo apt install ./door-sense_0.0.3_arm64_nx_cuda.deb
+sudo apt install ./door-sense_0.0.4_arm64_nx_cuda.deb
 ```
-This will install a linux app called Door Sense.
+This will install two linux applications called Door Sense v04 and Door Sense FX v04.
 
 **The board needs to be restarted before the application can be used.**
 
 **Also make sure the NX board is set to run in mode 2.**
 
-This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed. please install Nvidia Cuda on the Xavier NX board using the Nvidia SDK Manager.
+This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavier NX board. If it is not already installed, please install Nvidia Cuda on the Xavier NX board using the Nvidia SDK Manager.
  
 ## Troubleshooting
 ### known issues
