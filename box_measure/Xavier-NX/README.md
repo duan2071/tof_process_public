@@ -42,22 +42,31 @@ For additions info please see:
 
 The first step is to download scripts and deb packages:
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/install_box-measure_dependencies_bionic.sh)
-- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera_0.0.1_arm64_nx.deb)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/box-measure_0.0.4_arm64_nx.deb)
+
+- [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
+or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
+
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/box-measure_0.0.5_arm64_nx.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
 ./install_box-measure_dependencies_bionic.sh
 ```
 
-Install deb packages:
+Install camera deb package (depending on the version of camera module you are using):
 ```
-sudo apt install ./aditof-camera_0.0.1_arm64_nx.deb
+sudo apt install ./aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb
 ```
+or
+```
+sudo apt install ./aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb
+```
+
 This step installs the modules required to run the camera and needs to be done only once per system.
 
+Install box measure deb package:
 ```
-sudo apt install ./box-measure_0.0.4_arm64_nx.deb
+sudo apt install ./box-measure_0.0.5_arm64_nx.deb
 ```
 This will install a linux app called Box Measure.
 
