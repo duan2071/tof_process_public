@@ -31,7 +31,11 @@ The box dimensions should be between 20 cm and 90 cm.
 Please watch the live demo video to see an example of how the camera and the box should be placed. [Demo video](https://www.youtube.com/watch?v=G-9UfaZXUCk)
 
 ### Run the box measure app.
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/run_app_xavier.png)
+There are two applications available. 
+- Box Measure v0.5 is intended to be used with the AD-96TOF1-EBZ camera module
+- Box Measure v0.5 is intended to be used with the AD-FXTOF1-EBZ camera module
+Please select the application that is appropriate for the setup that you have.
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/run_app_nx.png)
 
 The application will open two windows:
 - an image window showing the input from the camera and the box measurement results overlayed on top
