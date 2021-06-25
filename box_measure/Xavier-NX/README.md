@@ -68,7 +68,7 @@ Install box measure deb package:
 ```
 sudo apt install ./box-measure_0.0.5_arm64_nx.deb
 ```
-This will install a linux app called Box Measure.
+This will install two linux applications called Box Measure v05 and Box Measure FX v05.
 
 **The board needs to be restarted before the application can be used.**
 
