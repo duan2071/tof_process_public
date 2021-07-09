@@ -37,9 +37,15 @@ Please watch the live demo video to see an example of how the camera should be p
 
 #### Running the application in live mode
 
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/run_app.png)
+There are three applications available ("Door Sense Fx" in not availible on PC).
 
-The application can be started by using one of the two icons. The "Door Sense" icon will start the application in "far" mode. The "Door Sense Med" will start the application in "med" mode.
+- "Door Sense" is intended to be used with the AD-96TOF1-EBZ camera module in "far" mode
+- "Door Sense Med" is intended to be used with the AD-96TOF1-EBZ camera module in "med" mode
+- "Door Sense Fx" is intended to be used with the AD-FXTOF1-EBZ camera module which can only run in "med" mode
+
+Please select the application that is appropriate for the setup that you have.
+
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/run_app.png)
 
 The application will open two windows:
 - an image window showing the input from the camera and the detected elements (persons in the detection area and any ground and walls inside the detection area).
@@ -52,13 +58,17 @@ The application will open two windows:
 
 ### Running the application from command line
 
-To start the application in "far" mode open a Terminal window and type in the command below.
+To start the application with the AD-96TOF1-EBZ camera module in "far" mode open a Terminal window and type in the command below.
 ```
 /opt/robotics-ai/door-sense/run.sh
 ```
-To start the application from the command line in "med" mode you can use the command line below.
+To start the application with the AD-96TOF1-EBZ camera module from the command line in "med" mode you can use the command line below.
 ```
 /opt/robotics-ai/door-sense/run_med.sh
+```
+To start the application with the AD-FXTOF1-EBZ camera module from the command line you can use the command line below.
+```
+/opt/robotics-ai/door-sense/run_fx.sh
 ```
 
 The image may be too dark or too saturated. To mitigate this issue an auto gain feature has been implemented.
@@ -66,6 +76,14 @@ Unfortunately auto gain does not work on Xavier AGX and Xavier NX. The brightnes
 To set the gamma correction parameter to 0.5 you should use the command line:
 ```
 /opt/robotics-ai/door-sense/run.sh gamma:=0.5
+```
+or
+```
+/opt/robotics-ai/door-sense/run_med.sh gamma:=0.5
+```
+or
+```
+/opt/robotics-ai/door-sense/run_fx.sh gamma:=0.5
 ```
 Different values for the gamma parameter can be tested to see which generates the best results.
 
