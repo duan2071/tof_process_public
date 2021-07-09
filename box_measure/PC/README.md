@@ -8,7 +8,7 @@ Please follow these instructions.
 
 The first step is to download scripts and deb packages:
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/PC/install_box-measure_dependencies_focal.sh)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/PC/box-measure_0.0.4_amd64.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/PC/box-measure_0.0.5_amd64.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
@@ -17,7 +17,7 @@ Install the app external dependencies using: (you may need to set execute permis
 
 Install deb package:
 ```
-sudo apt install ./box-measure_0.0.4_amd64.deb
+sudo apt install ./box-measure_0.0.5_amd64.deb
 ```
 
 ## Troubleshooting
