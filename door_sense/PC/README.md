@@ -8,8 +8,8 @@ Please follow these instructions.
 
 The first step is to download scripts and deb packages:
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/install_door-sense_dependencies_focal.sh)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/door-sense_0.0.3_amd64.deb)
-- [deb package using CUDA](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/door-sense_0.0.3_amd64_cuda.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/door-sense_0.0.4_amd64.deb)
+- [deb package using CUDA](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/PC/door-sense_0.0.4_amd64_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
@@ -18,11 +18,11 @@ Install the app external dependencies using: (you may need to set execute permis
 
 Install deb package:
 ```
-sudo apt install ./door-sense_0.0.3_amd64.deb
+sudo apt install ./door-sense_0.0.4_amd64.deb
 ```
 or
 ```
-sudo apt install ./door-sense_0.0.3_amd64_cuda.deb
+sudo apt install ./door-sense_0.0.4_amd64_cuda.deb
 ```
 
 ## Troubleshooting
