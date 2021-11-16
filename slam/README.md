@@ -37,7 +37,7 @@ Please watch the live demo video to see an example of how the camera should be p
 
 #### Running the application in live mode
 
-There are three applications available ("Door Sense Fx" in not availible on PC).
+There are three applications available ("Slam Fx" in not availible on PC).
 
 - "Slam" is intended to be used with the AD-96TOF1-EBZ camera module in "far" mode
 - "Slam Med" is intended to be used with the AD-96TOF1-EBZ camera module in "med" mode
@@ -45,7 +45,7 @@ There are three applications available ("Door Sense Fx" in not availible on PC).
 
 Please select the application that is appropriate for the setup that you have.
 
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/run_app.png)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Doc/Images/run_app.png)
 
 The application will open four windows:
 - an image window showing the input from the camera and the detected objects.
@@ -53,7 +53,7 @@ The application will open four windows:
 - a window containing a list of detected objects with their position relative to the camera
 - a console window
 
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/app_results.png)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Doc/Images/app_results.png)
 
  - video showing a live demo
  [Demo video](https://www.youtube.com/watch?v=XKTGsVNyvrg&ab_channel=RoboticsAI)
