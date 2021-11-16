@@ -9,7 +9,6 @@ Please follow these instructions.
 The first step is to download scripts and deb packages:
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/slam/PC/install_slam_dependencies_focal.sh)
 - [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/PC/slam_0.0.1_amd64.deb)
-- [deb package using CUDA](https://github.com/robotics-ai/tof_process_public/blob/main/slam/PC/slam_0.0.1_amd64_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
