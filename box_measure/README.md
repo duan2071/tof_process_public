@@ -14,6 +14,9 @@ Xavier AGX
 Xavier NX
 [Linux Xavier NX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Xavier-NX/README.md)
 
+ADI Smart Camera
+[ADI Smart Camera specific info](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/ADI-Smart-Camera/README.md)
+
 ## Running the demo
 ### Position the camera and the box.
 For best results the camera and the box should be placed similar to the positions represented in the image below. Plane brown boxes work best.
