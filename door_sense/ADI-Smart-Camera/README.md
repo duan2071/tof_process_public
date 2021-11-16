@@ -35,7 +35,7 @@ Install Door Sense deb package:
 ```
 sudo apt install ./door-sense_0.0.4_arm64_nano.deb
 ```
-This will install two linux applications called Door Sense v04 and Door Sense FX v04.
+This will install one linux application called Door Sense FX v04.
 
 ## Troubleshooting
 ### solutions to common problems

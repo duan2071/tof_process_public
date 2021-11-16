@@ -35,7 +35,7 @@ Install box measure deb package:
 ```
 sudo apt install ./box-measure_0.0.5_arm64_nano.deb
 ```
-This will install two linux applications called Box Measure v05 and Box Measure FX v05.
+This will install one linux application called Box Measure FX v05.
 
 ## Troubleshooting
 ### solutions to common problems
