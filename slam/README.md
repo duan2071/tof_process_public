@@ -15,7 +15,9 @@ Xavier AGX
 Xavier NX
 [Linux Xavier NX specific info](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/README.md)
 
- 
+ADI Smart Camera
+[ADI Smart Camera specific info](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/README.md)
+
 ## Running the demo
 ### Position the camera.
 For best results the camera should be placed similar to the positions represented in the image below.
