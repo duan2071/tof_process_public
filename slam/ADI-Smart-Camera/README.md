@@ -5,7 +5,7 @@ Required hardware AD-3DSMARTCAM1-PRZ:
  - AD-3DSMARTCAM1-PRZ camera
  - WiFi/ETH connection
  
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/adi_smart.png)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Doc/Images/adi_smart.png)
 
 For additions info please see: 
 [ADI Smart Camera](https://wiki.analog.com/resources/eval/user-guides/ad-3dsmartcam1-prz)
@@ -13,11 +13,11 @@ For additions info please see:
 ## Software setup
 
 The first step is to download scripts and deb packages:
-- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/ADI-Smart-Camera/install_box-measure_dependencies_bionic.sh)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/install_box-measure_dependencies_bionic.sh)
 
-- [AD-3DSMARTCAM1-PRZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/ADI-Smart-Camera/aditof-camera-AD-3DSMARTCAM1-PRZ_0.0.1_arm64_nano.deb)
+- [AD-3DSMARTCAM1-PRZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/aditof-camera-AD-3DSMARTCAM1-PRZ_0.0.1_arm64_nano.deb)
 
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/ADI-Smart-Camera/door-sense_0.0.4_arm64_nano.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/door-sense_0.0.4_arm64_nano.deb)
 
 Install the app and external dependencies using: (you may need to set execute permissions for the file)
 ```

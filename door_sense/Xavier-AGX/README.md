@@ -8,7 +8,7 @@ Required hardware:
  - HDMI monitor and cable
  - USB keyboard and mouse
  
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-agx-ad96tof1.jpg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-agx-ad96tof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the AGX board.**
 
@@ -16,7 +16,7 @@ Required hardware:
 
 **Orientation of the ribbon cable (conductors pointing down towards the lens on the mezzanine card and conductors pointing down towards the PCB surface on the interposer)**
 
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
 For additions info please see: 
 [Xavier AGX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_agx)
@@ -57,4 +57,4 @@ This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavi
    - Auto gain is disabled on Nvidia AGX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
    - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
-   - if the camera stops providing frames to the application the the AGX board needs to be restarted.
+   - if the camera stops providing frames to the application the AGX board needs to be restarted.

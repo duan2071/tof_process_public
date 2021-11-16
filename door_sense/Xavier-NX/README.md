@@ -8,7 +8,7 @@ Required hardware AD-96TOF1-EBZ:
  - HDMI monitor and cable
  - USB keyboard and mouse
  
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-ad96tof1.jpg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-ad96tof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the NX board.**
 
@@ -16,7 +16,7 @@ Required hardware AD-96TOF1-EBZ:
 
 **Orientation of the ribbon cable (conductors pointing down towards the lens on the mezzanine card and conductors pointing towards the heat sink on the NX board)**
 
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
 
 For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
@@ -46,7 +46,7 @@ For additions info please see:
 - [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
 or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
 
-- [Door Sense deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/door-sense_0.0.4_arm64_nx_cuda.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/door-sense_0.0.4_arm64_nx_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
@@ -81,4 +81,4 @@ This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavi
    - Auto gain is disabled on Nvidia NX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
    - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
-   - if the camera stops providing frames to the application the the NX board needs to be restarted.
+   - if the camera stops providing frames to the application the NX board needs to be restarted.
