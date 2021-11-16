@@ -1,4 +1,4 @@
-# Door sense app for Xavier NX
+# Slam app for Xavier NX
 
 ## Hardware setup AD-96TOF1-EBZ
 Required hardware AD-96TOF1-EBZ:
@@ -41,16 +41,16 @@ For additions info please see:
 
 ## Software setup
 
-- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/install_door-sense_dependencies_bionic.sh)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/install_slam_dependencies_bionic.sh)
 
-- [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
-or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
+- [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
+or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
 
-- [Door Sense deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-NX/door-sense_0.0.4_arm64_nx_cuda.deb)
+- [Slam Sense deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/slam_0.0.1_arm64_nx_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_door-sense_dependencies_bionic.sh
+./install_slam_dependencies_bionic.sh
 ```
 
 Install camera deb package (depending on the version of camera module you are using):
@@ -64,11 +64,11 @@ sudo apt install ./aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb
 
 This step installs the modules required to run the camera and needs to be done only once per system.
 
-Install Door Sense deb package:
+Install Slam deb package:
 ```
-sudo apt install ./door-sense_0.0.4_arm64_nx_cuda.deb
+sudo apt install ./slam_0.0.1_arm64_nx_cuda.deb
 ```
-This will install two linux applications called Door Sense v04 and Door Sense FX v04.
+This will install two linux applications called Slam FX v01.
 
 **The board needs to be restarted before the application can be used.**
 
@@ -80,5 +80,5 @@ This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavi
 ### known issues
    - Auto gain is disabled on Nvidia NX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
-   - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
+   - if the image seems to dark or to saturated then the slam application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
    - if the camera stops providing frames to the application the the NX board needs to be restarted.
