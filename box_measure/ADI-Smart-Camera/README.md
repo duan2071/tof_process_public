@@ -26,7 +26,7 @@ Install the app external dependencies using: (you may need to set execute permis
 
 Install camera deb package:
 ```
-sudo apt install ./aditof-camera-AD-3DSMARTCAM1-PRZ_0.0.1_arm64_nx.deb
+sudo apt install ./aditof-camera-AD-3DSMARTCAM1-PRZ_0.0.1_arm64_nano.deb
 ```
 
 This step installs the modules required to run the camera and needs to be done only once per system.
