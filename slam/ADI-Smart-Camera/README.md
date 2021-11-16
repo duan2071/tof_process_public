@@ -17,7 +17,7 @@ The first step is to download scripts and deb packages:
 
 - [AD-3DSMARTCAM1-PRZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/aditof-camera-AD-3DSMARTCAM1-PRZ_0.0.1_arm64_nano.deb)
 
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/door-sense_0.0.4_arm64_nano.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/ADI-Smart-Camera/slam_0.0.1_arm64_nano.deb)
 
 Install the app and external dependencies using: (you may need to set execute permissions for the file)
 ```
