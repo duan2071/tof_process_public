@@ -26,7 +26,7 @@ For additions info please see:
 The first step is to download scripts and deb packages:
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/install_slam_dependencies_bionic.sh)
 - [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_agx.deb)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/slam_0.0.1_arm64_agx_cuda.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/slam_0.0.1_arm64_agx.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
