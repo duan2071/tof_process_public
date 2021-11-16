@@ -40,7 +40,7 @@ Install Slam deb package:
 ```
 sudo apt install ./slam_0.0.1_arm64_nano.deb
 ```
-This will install two linux applications called Slam FX v01.
+This will install one linux application called Slam FX v01.
 
 ## Troubleshooting
 ### solutions to common problems

@@ -68,7 +68,7 @@ Install Slam deb package:
 ```
 sudo apt install ./slam_0.0.1_arm64_nx_cuda.deb
 ```
-This will install two linux applications called Slam FX v01.
+This will install two linux applications called Slam V01 and Slam FX v01.
 
 **The board needs to be restarted before the application can be used.**
 
