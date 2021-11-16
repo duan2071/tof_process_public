@@ -22,7 +22,7 @@ For best results the camera should be placed similar to the positions represente
 
 ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Doc/Images/fig1.png)
 
-The camera should be positioned in the range 1 meter to 1.5 meters from the ground. The roll of the camera should close to 0. (The view of the camera should be parrallel to the ground) The camera should have a good view of the ground.
+The camera should be positioned in the range 1 meter to 1.5 meters from the ground. The roll of the camera should close to 0. (The view of the camera should be parralel to the ground) The camera should have a good view of the ground.
 
 The detection range is determined by the "mode" the ToF camera is set to. This will impact the way objects, the ground and walls are detected.
 
@@ -37,7 +37,7 @@ Please watch the live demo video to see an example of how the camera should be p
 
 #### Running the application in live mode
 
-There are three applications available ("Slam Fx" in not availible on PC).
+There are three applications available ("Slam Fx" in not available on PC).
 
 - "Slam" is intended to be used with the AD-96TOF1-EBZ camera module in "far" mode
 - "Slam Med" is intended to be used with the AD-96TOF1-EBZ camera module in "med" mode
