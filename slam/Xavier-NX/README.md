@@ -46,7 +46,7 @@ For additions info please see:
 - [ADI AD-96TOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_nx.deb)
 or [ADI AD-FXTOF1-EBZ camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/aditof-camera-AD-FXTOF1-EBZ_0.0.1_arm64_nx.deb)
 
-- [Slam Sense deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/slam_0.0.1_arm64_nx_cuda.deb)
+- [Slam deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-NX/slam_0.0.1_arm64_nx.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
