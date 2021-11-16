@@ -8,7 +8,7 @@ Required hardware:
  - HDMI monitor and cable
  - USB keyboard and mouse
  
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Doc/Images/xavier-agx-ad96tof1.jpg)
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-agx-ad96tof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the AGX board.**
 
