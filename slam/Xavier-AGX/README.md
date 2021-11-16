@@ -1,4 +1,4 @@
-# Door sense app for Xavier AGX
+# Slam app for Xavier AGX
 
 ## Hardware setup
 Required hardware:
@@ -8,7 +8,7 @@ Required hardware:
  - HDMI monitor and cable
  - USB keyboard and mouse
  
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-agx-ad96tof1.jpg)
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Doc/Images/xavier-agx-ad96tof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the AGX board.**
 
@@ -24,9 +24,9 @@ For additions info please see:
 ## Software setup
 
 The first step is to download scripts and deb packages:
-- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/install_door-sense_dependencies_bionic.sh)
-- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_agx.deb)
-- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Xavier-AGX/door-sense_0.0.4_arm64_agx_cuda.deb)
+- [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/install_slam_dependencies_bionic.sh)
+- [ADI camera deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_agx.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/slam/Xavier-AGX/slam_0.0.1_arm64_agx_cuda.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
@@ -40,9 +40,9 @@ sudo apt install ./aditof-camera-AD-96TOF1-EBZ_0.0.1_arm64_agx.deb
 This step installs the modules required to run the camera and needs to be done only once per system.
 
 ```
-sudo apt install ./door-sense_0.0.4_arm64_agx_cuda.deb
+sudo apt install ./slam_0.0.1_arm64_agx_cuda.deb
 ```
-This will install a linux app called Door Sense.
+This will install a linux app called Slam.
 
 **The board needs to be restarted before the application can be used.**
 
@@ -56,5 +56,5 @@ This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavi
 ### known issues
    - Auto gain is disabled on Nvidia AGX because currently there are some issues with setting the gamma parameter too often.
 ### solutions to common problems
-   - if the image seems to dark or to saturated then the door sense application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
+   - if the image seems to dark or to saturated then the slam application can be run from the command line and the parameter that controls the image saturation can be set manually in the command line.
    - if the camera stops providing frames to the application the the AGX board needs to be restarted.
