@@ -13,7 +13,7 @@ The first step is to download scripts and deb packages:
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_box-measure_dependencies_focal.sh
+./install_door-sense_dependencies_focal.sh
 ```
 
 Install deb package:

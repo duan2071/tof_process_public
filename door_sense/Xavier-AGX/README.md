@@ -16,7 +16,7 @@ Required hardware:
 
 **Orientation of the ribbon cable (conductors pointing down towards the lens on the mezzanine card and conductors pointing down towards the PCB surface on the interposer)**
 
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/switches.jpeg)
 
 For additions info please see: 
 [Xavier AGX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_agx)
@@ -30,7 +30,7 @@ The first step is to download scripts and deb packages:
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
-./install_box-measure_dependencies_bionic.sh
+./install_door-sense_dependencies_bionic.sh
 ```
 
 Install deb packages:
@@ -48,7 +48,7 @@ This will install a linux app called Door Sense.
 
 **Also make sure the AGX board is set to run in mode 0 (MAXN).**
 
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/set_mode.png)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/set_mode.png)
 
 This application uses Nvidia Cuda to run. Make sure Cuda is instaled on the Xavier AGX board. If it is not already installed. please install Nvidia Cuda on the Xavier AGX board using the Nvidia SDK Manager.
  

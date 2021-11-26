@@ -100,7 +100,7 @@ The gamma parameter can be found in the tof_source panel. (Setting the gamma par
 
 The application can be started in offline mode by using the command line:
 ```
-/opt/robotics-ai/door-sense/run_capture.sh capture_name:=[full path for the capture file]
+/opt/robotics-ai/door-sense/run_capture.sh [full path for the capture file]
 ```
 
 ### Recording captures

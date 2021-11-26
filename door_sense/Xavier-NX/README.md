@@ -8,7 +8,7 @@ Required hardware AD-96TOF1-EBZ:
  - HDMI monitor and cable
  - USB keyboard and mouse
  
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-ad96tof1.jpg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-nx-ad96tof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module and the power switch for the camera module is in the ON position before powering up the NX board.**
 
@@ -16,7 +16,7 @@ Required hardware AD-96TOF1-EBZ:
 
 **Orientation of the ribbon cable (conductors pointing down towards the lens on the mezzanine card and conductors pointing towards the heat sink on the NX board)**
 
-![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/switches.jpeg)
+![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/switches.jpeg)
 
 For additions info please see: 
 [Xavier NX setup](https://wiki.analog.com/resources/eval/user-guides/ad-96tof1-ebz/ug_xavier_nx)
@@ -29,7 +29,7 @@ Required hardware AD-FXTOF1-EBZ:
  - HDMI monitor and cable
  - USB keyboard and mouse
  
- ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/box_measure/Doc/Images/xavier-nx-adfxtof1.jpg)
+ ![Display Image](https://github.com/robotics-ai/tof_process_public/blob/main/door_sense/Doc/Images/xavier-nx-adfxtof1.jpg)
 
 **Please make sure that the power source is plugged into the camera module before powering up the NX board.**
 

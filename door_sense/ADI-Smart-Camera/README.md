@@ -1,4 +1,4 @@
-# Box measurement app for ADI Smart Camera
+# Door sense app for ADI Smart Camera
 
 ## Hardware setup AD-3DSMARTCAM1-PRZ
 Required hardware AD-3DSMARTCAM1-PRZ:

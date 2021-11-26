@@ -85,12 +85,12 @@ The gamma parameter can be found in the tof_source panel. (Setting the gamma par
 ### Running the application using a capture file
 Open a Terminal window.
 ```
-/opt/robotics-ai/box-measure/run_capture.sh capture_name:=[full path for the capture file]
+/opt/robotics-ai/box-measure/run_capture.sh [full path for the capture file]
 ```
 or
 
 ```
-/opt/robotics-ai/box-measure/run_capture_fx.sh capture_name:=[full path for the capture file]
+/opt/robotics-ai/box-measure/run_capture_fx.sh [full path for the capture file]
 ```
 
 ### Recording captures
