@@ -24,10 +24,11 @@ Always start the consumer application before runnning the server app.
 ### Running the example data consumer for Door Sense
 Open a terminal for each of the following commands:
 ```
-shared_mem_consumer "ir_shared" [memory size in bytes] [Output folder] "png"
-shared_mem_consumer "detect2d_shared" [memory size in bytes] [Output folder] "png"
-shared_mem_consumer "output_shared" [memory size in bytes] [Output folder] "png"
+shared_mem_consumer "ir_shared" [memory size in bytes] [output folder] "png"
+shared_mem_consumer "detect2d_shared" [memory size in bytes] [output folder] "png"
+shared_mem_consumer "output_shared" [memory size in bytes] [output folder] "png"
 ```
+The output folder must be created before running the consumer application.
 
 ### Run the door sense app.
 Start server with a recording from a AD96ToF1 camera:
