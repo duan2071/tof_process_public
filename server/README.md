@@ -30,7 +30,7 @@ shared_mem_consumer "output_shared" [memory size in bytes] [output folder] "png"
 ```
 The output folder must be created before running the consumer application.
 
-### Run the door sense app.
+### Run the door sense app
 Start server with a recording from a AD96ToF1 camera:
 ```
 /opt/robotics-ai/door-sense/run_capture.sh [full path for the capture file] [other parameters]
