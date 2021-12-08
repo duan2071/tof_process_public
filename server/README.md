@@ -27,7 +27,12 @@ Open a terminal for each of the following commands:
 shared_mem_consumer "ir_shared" [memory size in bytes] [output folder] "png"
 shared_mem_consumer "detect2d_shared" [memory size in bytes] [output folder] "png"
 shared_mem_consumer "output_shared" [memory size in bytes] [output folder] "png"
+shared_mem_consumer "output_text_shared" [memory size in bytes] [output folder] "txt"
 ```
+Where:
+- memory size in bytes - represents the size of the shared memory to create
+- output folder - represents the folder where to write the shared memory content to files
+- "png"/"txt"/etc - represents the file extension to use
 The output folder must be created before running the consumer application.
 
 ### Run the door sense app
