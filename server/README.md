@@ -8,6 +8,7 @@ PC running Ubuntu 20.04
 The first step is to download scripts and deb packages:
 - [external dependencies installer script](https://github.com/robotics-ai/tof_process_public/blob/main/server/install_dependencies_focal.sh)
 - [deb package using CUDA](https://github.com/robotics-ai/tof_process_public/blob/main/server/door-sense_0.0.4_amd64_cuda.deb)
+- [deb package](https://github.com/robotics-ai/tof_process_public/blob/main/server/door-sense_0.0.4_amd64.deb)
 
 Install the app external dependencies using: (you may need to set execute permissions for the file)
 ```
