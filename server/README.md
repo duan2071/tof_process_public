@@ -29,6 +29,7 @@ shared_mem_consumer "ir_shared" [memory size in bytes] [output folder] "png"
 shared_mem_consumer "detect2d_shared" [memory size in bytes] [output folder] "png"
 shared_mem_consumer "output_shared" [memory size in bytes] [output folder] "png"
 shared_mem_consumer "output_text_shared" [memory size in bytes] [output folder] "txt"
+shared_mem_consumer "output_pcd_obj" [memory size in bytes] [output folder] "txt"
 ```
 Where:
 - memory size in bytes - represents the size of the shared memory to create
@@ -45,6 +46,11 @@ Start server with a recording from a AD96ToF1 camera:
 Start server with a recording from a ADFXToF1 camera:
 ```
 /opt/robotics-ai/door-sense/run_capture_fx.sh [full path for the capture file] [other parameters]
+```
+
+Start server with a recording from a 3DSMARTCAM1 camera:
+```
+/opt/robotics-ai/door-sense/run_capture_smart.sh [full path for the capture file] [other parameters]
 ```
 ## Uninstalling the app
 To uninstall the door sense application open a terminal window and type.
